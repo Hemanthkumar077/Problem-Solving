@@ -1,0 +1,9 @@
+#  print middle character(s) in the given string  or number.  
+a = "wonder"
+result = ""
+if len(a) % 2 == 0 :
+    result += a[(len(a) // 2)-1]  
+    result += a[len(a)  // 2]
+elif len(a) % 2 != 0:
+    result += a[len(a)  // 2]
+print(result)
