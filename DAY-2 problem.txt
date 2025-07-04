@@ -1,0 +1,13 @@
+Write a program to print the vowels in the given string in reverse order.   
+Testcase1 : Helloworld   
+Output : ooe   
+
+
+str1 = "Helloworld"
+vowels = "AEIOUaeiou"
+result = ""
+for i in str1 :
+    if i in vowels :
+        result += i
+for j in range(len(result)-1,-1,-1):
+    print(result[j],end="")
