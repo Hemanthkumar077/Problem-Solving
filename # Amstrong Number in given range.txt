@@ -1,0 +1,16 @@
+# Amstrong Number in given range 
+num1 = 150
+num2 = 160
+out = 0
+result = []
+for i in range(num1 , num2+1) :
+    out = 0 # out = 0 is set for every new number and not used in else statement in inner loop
+    count = len(str(i))
+    for j in str(i):
+        out += (int(j) ** count)
+    if i == out :
+        result.append(i)
+print(result)
+        
+        
+    
