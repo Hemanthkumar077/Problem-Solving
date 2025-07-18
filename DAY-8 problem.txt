@@ -1,0 +1,12 @@
+# fibonacci of nth number
+num = 10
+n1 , n2 = 0 ,1
+# we did not print n1,n2 separatly in print statement
+result = [n1,n2]
+for i in range(2,num):
+    n3 = n1 + n2
+    n1 = n2
+    n2 = n3
+    result.append(n3)
+print(result[-1])
+        
