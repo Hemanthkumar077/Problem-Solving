@@ -1,0 +1,30 @@
+######  Write a program that takes array of numbers as input, among the numbers in
+
+###### array, check how many numbers starts with the same digit and ends with the
+
+###### same digits. Print the count of such kind of numbers in the given array.
+
+###### Testcase1 :  \[ 34, 88, 423, 121, 2382, 10]
+
+###### Output    :  3
+
+###### 
+
+###### 
+
+###### a =  \[ 34, 88, 423, 121, 2382, 10]
+
+###### count = 0
+
+###### for i in range(len(a)):
+
+######    num = str(a\[i])
+
+######    if len(num) >= 2 :
+
+######        if num\[0] == num\[-1] :
+
+######        	   count += 1
+
+###### print(count)S
+
