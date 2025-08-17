@@ -1,0 +1,25 @@
+#  Find the Maximum Product of Two Elements 
+# Problem: Write a function to find the maximum product of two 
+# elements in an array. 
+# Testcase 1: 
+# Input: [3, 5, -2, 8, 11] 
+# Output: 8 * 11 → 88 
+
+
+
+def maxpro(list1):
+    max_num = list1[0]
+    sec_max = list1[1]
+    for i in range(1,len(list1)):
+        if list1[i] > max_num :
+            sec_max = max_num
+            max_num = list1[i]
+        elif list1[i] > sec_max and list1[i] != max_num :
+            sec_max = list1[i]
+    return max_num * sec_max
+    
+output = maxpro([3,5,-2,8,11])
+print(output)
+
+
+
