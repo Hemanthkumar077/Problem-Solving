@@ -1,0 +1,16 @@
+#  Intersection of Two Arrays 
+
+# Problem: Write a function that returns the common elements 
+# between two arrays. 
+# Testcase 1: 
+# Input: [1, 2, 3], [2, 3, 4] 
+# Output: [2, 3] 
+
+
+a , b = [1,2,3] ,[2,3,4]
+result = []
+for i in a :
+    for j in b :
+        if i == j :
+            result.append(j)
+print(result)
