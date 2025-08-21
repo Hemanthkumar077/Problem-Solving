@@ -14,3 +14,4 @@ for i in a :
         if i == j :
             result.append(j)
 print(result)
+
