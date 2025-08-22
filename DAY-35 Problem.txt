@@ -1,0 +1,22 @@
+#  Find Missing Number 
+
+# Problem: Given an array of consecutive numbers with one 
+# missing, find the missing number. 
+# Testcase 1: 
+# Input: [1, 2, 4, 5] 
+# Output: [3] 
+
+
+
+def miss_num(list1):
+    total = 0
+    sum1 = 0
+    for i in list1 :
+        total += i
+    for j in range(list1[0],list1[-1] +1):
+        sum1 += j
+    result = sum1 - total
+    return(result)
+    
+out = miss_num([1,2,4,5])
+print(out)
