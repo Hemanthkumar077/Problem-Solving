@@ -1,0 +1,25 @@
+#  Flatten a Nested Array 
+
+# Problem: Write a function to flatten a nested array into a single 
+# array. 
+# Testcase 1:Improvements :  Very slow in improving 
+# Target date for completion :  
+# Input: [1, [2, [3, [4]], 5]] 
+# Output: [1, 2, 3, 4, 5] 
+
+
+def Nested_Array(n):
+    result = []
+    for item in n :
+        if type(item) == list :
+            sublist = Nested_Array(item)
+            for x in sublist :
+                result.append(x)
+            
+        else :
+            result.append(item)
+    
+    return result
+        
+output  = Nested_Array([1,[2,[3,[4],5]]])
+print(output)
