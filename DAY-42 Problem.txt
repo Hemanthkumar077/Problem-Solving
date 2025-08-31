@@ -1,0 +1,29 @@
+Group Anagrams 
+Problem: Write a function to group anagrams from an array of 
+strings. 
+Testcase 1: 
+Input: ["eat", "tea", "tan", "ate", "nat", "bat"] 
+Output: [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]] 
+
+
+
+def groupAnagrams(words):
+    anagram_map = {}  # Dictionary to store groups
+    
+    for word in words:
+        # Sort the word to create a key
+        key = ''.join(sorted(word))
+        
+        # Add word to the correct group
+        if key not in anagram_map:
+            anagram_map[key] = []
+        anagram_map[key].append(word)
+    
+    # Return grouped values
+    return list(anagram_map.values())
+
+
+# Testcase 1
+input_words = ["eat", "tea", "tan", "ate", "nat", "bat"]
+output = groupAnagrams(input_words)
+print(output)
