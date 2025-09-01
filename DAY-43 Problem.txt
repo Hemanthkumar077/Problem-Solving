@@ -1,0 +1,21 @@
+Longest Increasing subsequence in an array. 
+Testcase 1: 
+Input: [10, 9, 2, 5, 3, 7, 101, 18] 
+Output: 4 
+
+
+def lengthOfLIS(nums):
+    n = len(nums)
+    dp = [1] * n   # each number itself is a subsequence of length 1
+    
+    for i in range(n):
+        for j in range(i):
+            if nums[i] > nums[j]:
+                dp[i] = max(dp[i], dp[j] + 1)
+    
+    return max(dp)
+
+# Testcase 1
+arr = [10, 9, 2, 5, 3, 7, 101, 18]
+print(lengthOfLIS(arr))
+
