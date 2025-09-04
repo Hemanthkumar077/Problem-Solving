@@ -1,0 +1,31 @@
+Input: [3, 1, 2, 4, 7, 6, 5] 
+You are given an array of integers. Rearrange the array such that: 
+1. All even numbers appear before all odd numbers. 
+2. Within the even and odd groups, numbers should maintain their 
+relative order from the original array. 
+3. The rearrangement must be done in-place (without using extra 
+arrays). 
+Output: [2, 4, 6, 3, 1, 7, 5]
+
+
+def rearrange(arr):
+    n = len(arr)
+    j = 0  # pointer for position of next even
+
+    for i in range(n):
+        if arr[i] % 2 == 0:  # if even
+            temp = arr[i]
+            # shift all elements between j and i-1 to the right
+            k = i
+            while k > j:
+                arr[k] = arr[k - 1]
+                k -= 1
+            arr[j] = temp
+            j += 1  # move boundary for next even
+
+# Example
+arr = [3, 1, 2, 4, 7, 6, 5]
+rearrange(arr)
+print(arr)  # [2, 4, 6, 3, 1, 7, 5]
+
+
