@@ -1,0 +1,21 @@
+ Find the Longest Word 
+Problem: Write a function to find the longest word in a string. 
+Testcase 1: 
+Input: "The quick brown fox jumps over the lazy dog" 
+Output: "jumps" 
+
+
+def longest_word(sentence):
+    words = sentence.split()   # split into words
+    longest = ""               # keep track of longest word
+    
+    for word in words:
+        if len(word) > len(longest):
+            longest = word
+    return longest
+
+# Testcase 1
+print(longest_word("The quick brown fox jumps over the lazy dog"))
+
+
+
