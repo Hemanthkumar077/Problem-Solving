@@ -1,0 +1,32 @@
+Check for Anagrams 
+Problem: Write a function to check if two strings are anagrams of 
+each other. 
+Testcase 1: 
+Input: "listen", "silent" 
+Output: true 
+
+
+def check_anagram(s1, s2):
+    if len(s1) != len(s2):
+        return False
+    
+    count = {}
+    for ch in s1:
+        count[ch] = count.get(ch, 0) + 1
+    
+    for ch in s2:
+        if ch not in count:
+            return False
+        count[ch] -= 1
+        if count[ch] < 0:
+            return False
+    
+    return True
+
+# Test
+print(check_anagram("listen", "silent"))  # True
+print(check_anagram("rat", "car"))        # False
+
+
+
+
