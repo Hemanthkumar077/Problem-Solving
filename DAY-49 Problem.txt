@@ -1,0 +1,39 @@
+Check if String is a Valid Number 
+Problem: Write a function to check if a string is a valid number. 
+Testcase 1: 
+Input: "123.45" 
+Output: true 
+
+
+def is_valid_number(s: str) -> bool:
+    if not s:  # empty string not valid
+        return False
+
+    # Step 1: Handle optional sign
+    if s[0] in ['+', '-']:
+        s = s[1:]
+        if not s:  # only '+' or '-' not valid
+            return False
+
+    dot_count = 0
+    digit_count = 0
+
+    # Step 2: Check each character
+    for ch in s:
+        if ch == '.':
+            dot_count += 1
+            if dot_count > 1:  # more than one dot not valid
+                return False
+        elif '0' <= ch <= '9':  # manual digit check
+            digit_count += 1
+        else:
+            return False  # invalid character
+
+    # Step 3: Must contain at least one digit
+    return dig
+
+
+
+
+
+
