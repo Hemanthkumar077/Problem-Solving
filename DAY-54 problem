@@ -1,0 +1,26 @@
+str1 = "The quick brown fox jumps over the lazy dog"
+temp = str1.split()
+longest_str = ""
+for i in temp :
+    if len(i) >= len(longest_str):
+        longest_str = i
+print(longest_str)
+
+# or 
+
+str1 = "The quick brown fox jumps over the lazy doges"
+word = ""
+longest_str = ""
+for i in str1 :
+    if i != " ":
+        word += i
+    else :
+        if len(word) >= len(longest_str):
+            longest_str = word
+        word = ""
+        
+if len(word) >= len(longest_str):
+    longest_str = word
+
+print(longest_str)
+    
