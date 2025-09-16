@@ -1,0 +1,18 @@
+str1 = "listen"
+str2 = "silent"
+if len(str1) != len(str2):
+    print("false")
+temp = []
+temp.append(str1)
+temp.append(str2)
+result1 = ""
+result2 = ""
+for i in temp :
+    if i == temp[0]:
+        result1 += "".join(sorted(i))
+    else :
+        result2 += "".join(sorted(i))
+if result1 == result2 :
+    print("true")
+else :
+    print("false")
