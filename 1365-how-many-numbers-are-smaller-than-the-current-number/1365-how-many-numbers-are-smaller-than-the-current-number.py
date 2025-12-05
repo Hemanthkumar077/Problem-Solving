@@ -4,7 +4,9 @@ class Solution:
         for i in range(len(nums)):
             count = 0
             for j in range(len(nums)):
-                if nums[i] > nums[j] :
+                if i == j  :
+                    continue 
+                elif nums[i] > nums[j] :
                     count += 1
             res.append(count)
         return res   
