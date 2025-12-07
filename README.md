@@ -4,6 +4,7 @@
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/Hemanthkumar077/Problem-Solving/tree/master/0001-two-sum) |
 | [0242-valid-anagram](https://github.com/Hemanthkumar077/Problem-Solving/tree/master/0242-valid-anagram) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Hemanthkumar077/Problem-Solving/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 ## String
@@ -18,6 +19,7 @@
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/Hemanthkumar077/Problem-Solving/tree/master/0001-two-sum) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Hemanthkumar077/Problem-Solving/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 ## Counting Sort
 |  |
