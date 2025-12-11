@@ -15,6 +15,7 @@
 ## Sorting
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/Hemanthkumar077/Problem-Solving/tree/master/0075-sort-colors) |
 | [0217-contains-duplicate](https://github.com/Hemanthkumar077/Problem-Solving/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/Hemanthkumar077/Problem-Solving/tree/master/0242-valid-anagram) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Hemanthkumar077/Problem-Solving/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
@@ -22,10 +23,15 @@
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Hemanthkumar077/Problem-Solving/tree/master/0001-two-sum) |
+| [0075-sort-colors](https://github.com/Hemanthkumar077/Problem-Solving/tree/master/0075-sort-colors) |
 | [0217-contains-duplicate](https://github.com/Hemanthkumar077/Problem-Solving/tree/master/0217-contains-duplicate) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Hemanthkumar077/Problem-Solving/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 ## Counting Sort
 |  |
 | ------- |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Hemanthkumar077/Problem-Solving/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
+## Two Pointers
+|  |
+| ------- |
+| [0075-sort-colors](https://github.com/Hemanthkumar077/Problem-Solving/tree/master/0075-sort-colors) |
 <!---LeetCode Topics End-->
