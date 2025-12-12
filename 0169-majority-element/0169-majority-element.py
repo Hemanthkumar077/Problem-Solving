@@ -7,5 +7,5 @@ class Solution:
             else :
                 dict1[nums[i]] += 1
         for key , value in dict1.items():
-            if value >= len(nums)/2 :
+            if value > len(nums)/2 :
                 return key 
